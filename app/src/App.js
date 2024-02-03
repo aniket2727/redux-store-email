@@ -1,14 +1,18 @@
-import React from 'react'
-import AnotherComponent from './componets/AnotherComponets'
-import LoginComponent from './componets/LoginComponet'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import LoginComponent from './componets/LoginComponet';
+import AnotherComponent from './componets/AnotherComponets';
+
 const App = () => {
+  // Use useSelector to get the email from the Redux store
+
   return (
     <div>
-      <LoginComponent/>
-      <AnotherComponent/>
-      
+        <AnotherComponent />
+        <LoginComponent />
+  
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
